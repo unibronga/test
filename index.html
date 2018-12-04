@@ -1,14 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        body { margin: 0; padding: 0; box-sizing: border-box; background: #1D1E22;}
+        .page {
+          width:100%;
+          max-width: 1000px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          grid-gap: 15px;
+        }
+        .page__text {
+            display: grid;
+            text-align: center;
+            color: #ddd;
+            font-size: 14px;
+            font-family: Roboto, sans-serif;
+            background: #29292D;
+            box-shadow: 0 3px 5px #000;
+            transition: all .2s linear;
+            height: auto;
+            align-content: start;
+            padding: 10px;
+        }
+        .page__text:hover{transform: scale(1.1);}
+        .page__text-top {color: #fff; font-size: 22px}
+        .page__text-red {color: #666B7A}
+    </style>
 </head>
 <body>
 
-  
+<!-- BEM -->
+<div class="page">
+    <div class="page__text">
+        <p class="page__text-top">paragraph text top</p>
+        <span class="page__text-red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span>
+    </div>
+    <div class="page__text">
+        <p class="page__text-top">paragraph text top</p>
+        <span class="page__text-red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sed unde repellat aut, molestiae, quisquam in ex veritatis omnis libero odit, </span>
+    </div>
+    <div class="page__text">
+        <p class="page__text-top">paragraph text top</p>
+        <span class="page__text-red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sed unde repellat aut, molestiae, quisquam in ex veritatis omnis libero odit, ullam beatae saepe eaque quae dignissimos provident magni rem?</span>
+    </div>
+    <div class="page__text">
+        <p class="page__text-top">paragraph text top</p>
+        <span class="page__text-red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span>
+    </div>
+    <div class="page__text">
+        <p class="page__text-top">paragraph text top</p>
+        <span class="page__text-red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sed unde repellat aut, molestiae, quisquam in ex veritatis omnis libero odit, ullam beatae saepe eaque quae dignissimos provident magni rem?</span>
+    </div>
+    <div class="page__text">
+        <p class="page__text-top">paragraph text top</p>
+        <span class="page__text-red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span>
+    </div>
+    <div class="page__text">
+        <p class="page__text-top">paragraph text top</p>
+        <span class="page__text-red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sed unde repellat aut, molestiae, quisquam in ex veritatis omnis libero odit, ullam beatae saepe eaque quae dignissimos provident magni rem?</span>
+    </div>
+</div>
+
 
 </body>
 </html>
