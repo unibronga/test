@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>!DOCTYPE</title>
+   <meta charset="UTF-8">
+
+	<style type="text/css">
+
+		section { width: 100%; }
+
+		a.btn {
+			padding: 10px;
+			color:#fff;		
+			font: 28px Arial;
+			background: red;
+			margin: 0 auto;
+
+		}
+
+		a.btn:active {background: #c90000}
+		a.btn:hover {background: #c80000}
+
+        #btn1:focus::after {
+            content: url(testcss.php?action=1);
+            display: block;
+		    position: absolute;
+		    font-size: 20px;
+		    padding: 20px;
+		    background: #000;
+		    color: #fff;
+        }
+        #btn2:active::before {
+            content: 'Hello world';
+            display: block;
+		    position: absolute;
+		    font-size: 20px;
+		    padding: 20px;
+		    background: #000;
+		    color: #fff;
+        }
+         #btn2:active::before + a {display: none}
+
+
+         a[href*="icon.com"]:hover::before {
+         	content: 'сейчас перейдем на icon.com';
+         	display: block;
+		    position: absolute;
+		    font-size: 20px;
+		    padding: 20px;
+		    background: #000;
+		    color: #fff;
+         }
+
+
+	</style>
+
+</head>
+<body>
+
+
+<section>
+
+    <a href="#" class="btn" id="btn1"> Кнопка1</a>
+    <a href="#" class="btn" id="btn2"> Кнопка2</a>
+
+     <a href="icon.com" class="btn"> icon.com1</a>
+
+      <a href="icon.com" class="btn"> icon.com2</a>
+
+       <a href="#" class="btn" id="btn2"> Кнопка2</a>
+
+
+
+
+
+</section>
+
+	
+</body>
+</html>
