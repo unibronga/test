@@ -1,0 +1,39 @@
+
+$main-color: #1D1E22;
+$second-color: #29292D;
+$white: #fff;
+$red: #666B7A;
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: $main-color;
+}
+
+.page {
+  width:100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 15px;
+}
+
+.page__text {
+    display: grid;
+    text-align: center;
+    color: #ddd;
+    font-size: 14px;
+    font-family: Roboto, sans-serif;
+    background: $second-color;
+    box-shadow: 0 3px 5px #000;
+    transition: all .2s linear;
+    height: auto;
+    align-content: start;
+    padding: 10px;
+}
+.page__text:hover{transform: scale(1.1);}
+.page__text-top {color: $white; font-size: 22px}
+.page__text-red {color: $red}
