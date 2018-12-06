@@ -33,7 +33,8 @@ body {
     height: auto;
     align-content: start;
     padding: 10px;
+
+    &:hover {transform: scale(1.1);}
+    &-top {color: $white; font-size: 22px;}
+    &-red {color: $red;}
 }
-.page__text:hover{transform: scale(1.1);}
-.page__text-top {color: $white; font-size: 22px}
-.page__text-red {color: $red}
