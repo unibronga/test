@@ -2,7 +2,7 @@
 $main-color: #1D1E22;
 $second-color: #29292D;
 $white: #fff;
-$red: #666B7A;
+$gray: #666B7A;
 
 
 body {
@@ -10,11 +10,12 @@ body {
     padding: 0;
     box-sizing: border-box;
     background: $main-color;
+    font-family: Roboto, sans-serif;
 }
+.container {width: 1152px; margin: 0 auto;}
 
 .page {
   width:100%;
-  max-width: 1000px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -26,7 +27,6 @@ body {
     text-align: center;
     color: #ddd;
     font-size: 14px;
-    font-family: Roboto, sans-serif;
     background: $second-color;
     box-shadow: 0 3px 5px #000;
     transition: all .2s linear;
@@ -36,5 +36,6 @@ body {
 
     &:hover {transform: scale(1.1);}
     &-top {color: $white; font-size: 22px;}
-    &-red {color: $red;}
+    &-red {color: $gray;}
 }
+p.white-c{color: $gray}

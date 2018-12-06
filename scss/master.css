@@ -3,11 +3,16 @@ body {
   padding: 0;
   box-sizing: border-box;
   background: #1D1E22;
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  width: 1152px;
+  margin: 0 auto;
 }
 
 .page {
   width: 100%;
-  max-width: 1000px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -19,7 +24,6 @@ body {
   text-align: center;
   color: #ddd;
   font-size: 14px;
-  font-family: Roboto, sans-serif;
   background: #29292D;
   box-shadow: 0 3px 5px #000;
   transition: all .2s linear;
@@ -38,5 +42,9 @@ body {
 }
 
 .page__text-red {
+  color: #666B7A;
+}
+
+p.white-c {
   color: #666B7A;
 }
