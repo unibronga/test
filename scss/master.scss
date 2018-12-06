@@ -20,22 +20,30 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 15px;
-}
 
-.page__text {
-    display: grid;
-    text-align: center;
-    color: #ddd;
-    font-size: 14px;
-    background: $second-color;
-    box-shadow: 0 3px 5px #000;
-    transition: all .2s linear;
-    height: auto;
-    align-content: start;
-    padding: 10px;
+    &__text {
+        display: grid;
+        text-align: center;
+        color: #ddd;
+        font-size: 14px;
+        background: $second-color;
+        box-shadow: 0 3px 5px #000;
+        transition: all .2s linear;
+        height: auto;
+        align-content: start;
+        padding: 10px;
 
     &:hover {transform: scale(1.1);}
     &-top {color: $white; font-size: 22px;}
     &-red {color: $gray;}
+    }
 }
+
 p.white-c{color: $gray}
+
+.main{
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+}
+.main__block {}

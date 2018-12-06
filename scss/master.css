@@ -48,3 +48,9 @@ body {
 p.white-c {
   color: #666B7A;
 }
+
+.main {
+  display: grid;
+  grid-column: 2;
+  grid-row: 2;
+}
