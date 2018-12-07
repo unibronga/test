@@ -1,4 +1,5 @@
 body {
+  color: #fff;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -78,7 +79,5 @@ p.white-c {
   background: #666B7A;
 }
 
-.test2 {
-  color: #666B7A;
-}
+
 /*# sourceMappingURL=master.css.map */
