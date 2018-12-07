@@ -1,10 +1,8 @@
-
 $main-color: #1D1E22;
 $second-color: #29292D;
 $white: #fff;
 $gray: #666B7A;
 $maintext: Roboto;
-
 
 
 body {
@@ -65,3 +63,8 @@ p.white-c{color: $gray}
     background: $gray;
 
 }
+
+.test {
+    color: $white;
+}
+
