@@ -6,7 +6,6 @@ $maintext: Roboto;
 
 
 body {
-    color: $white;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -52,7 +51,6 @@ h1 {
     &-red {color: $gray;}
     }
 }
-
 p.white-c{color: $gray}
 
 .main{
@@ -60,6 +58,7 @@ p.white-c{color: $gray}
     grid-column: 2;
     grid-row: 2;
 }
+
 .main__block {
     background: $gray;
 
