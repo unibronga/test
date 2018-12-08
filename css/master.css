@@ -4,12 +4,13 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #1D1E22;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
+  color: #666B7A;
 }
 
 h1 {
   color: #fff;
-  font-family: Roboto;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;

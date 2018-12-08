@@ -2,7 +2,7 @@ $main-color: #1D1E22;
 $second-color: #29292D;
 $white: #fff;
 $gray: #666B7A;
-$maintext: Roboto;
+$maintext: Roboto, Arial, sans-serif;
 
 
 body {
@@ -10,7 +10,8 @@ body {
     padding: 0;
     box-sizing: border-box;
     background: $main-color;
-    font-family: $maintext, sans-serif;
+    font-family: $maintext;
+    color: $gray;
 }
 
 h1 {
@@ -24,7 +25,6 @@ h1 {
          transform: uppercase;
     }
 }
-
 .container {width: 1152px; margin: 0 auto;}
 
 .page {
