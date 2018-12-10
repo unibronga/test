@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="/scss/master.css">
 
 </head>
-<body>
+<body id="back">
+
 
 <section class="main">
     <div class="main__block"></div>
@@ -26,7 +27,11 @@
         <div class="page">
             <div class="page__text">
                 <p class="page__text-top">paragraph text top</p>
-                <span class="page__text-red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span>
+                <span class="page__text-red">
+                        <input type="range" name="red" id="red" min="0" max="255" placeholder="red">
+                        <input type="range" name="green" id="green" min="0" max="255" placeholder="green">
+                        <input type="range" name="blue" id="blue" min="0" max="255" placeholder="blue">                    
+                </span>
             </div>
             <div class="page__text">
                 <p class="page__text-top">paragraph text top</p>
@@ -59,7 +64,7 @@
 <section>
     <div class="container">
         <div class="wrapper">
-            <p class="white-c">
+            <p class="white-c" id="back2">
                 <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eos placeat libero repudiandae praesentium, atque nam commodi labore blanditiis. Adipisci porro consequatur recusandae eaque molestias aperiam, deserunt eius sunt animi.</span>
                 <span>Nemo quam iure consequatur minima fugiat dolorum exercitationem, facere eligendi ipsam odit eveniet, deserunt sint placeat, temporibus harum ipsa dolorem! Quisquam aperiam neque provident quod magnam similique sed possimus, nostrum.</span>
                 <span>Repudiandae iusto, perspiciatis rem totam blanditiis. Blanditiis nam itaque quos mollitia nemo ea, dicta. Voluptatibus soluta numquam impedit fugit facilis, vel earum in nisi animi mollitia perspiciatis laudantium molestiae error?</span>
@@ -70,6 +75,26 @@
     </div>
 </section>
 
+
+
+<script>
+    colormix();
+    
+    function colormix () {
+        var red = document.getElementById('red').value;
+        var green = document.getElementById('green').value;
+        var blue = document.getElementById('blue').value;
+
+        document.getElementById('back').setAttribute('style', 'background: rgb(' + red + ',' + green + ',' + blue + ');' );
+        document.getElementById('back2').setAttribute('style', 'background: rgb(' + red/2  + ',' + green/2 + ',' + blue/2 + ');' );
+    }
+
+    Array
+        .from(document.querySelectorAll('input[type=range]'))
+            .map(function(element){
+                element.addEventListener('input', colormix);
+        });
+</script>
 
 
 

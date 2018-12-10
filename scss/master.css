@@ -63,7 +63,9 @@ h1 {
 }
 
 p.white-c {
-  color: #666B7A;
+  color: #fff;
+  padding: 10px;
+  line-height: 1.5;
 }
 
 .main {
