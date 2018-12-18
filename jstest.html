@@ -14,10 +14,13 @@
     
 
     function showMessage(from, text) { 
-         alert(from + text);
-        }
-    showMessage('Маша', 'Привет!');
-    showMessage('Маша', 'Как дела?');
+        if (text === undefined) {
+            text = ' '; }
+        alert(from + text);
+    }
+
+    showMessage('Маша');
+    showMessage('Маша', ' Как дела? ');
 
 
 </script>
